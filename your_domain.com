@@ -2,13 +2,13 @@
 
 server {
     listen 80;
-    server_name example.com;
+    server_name your_domain.com;
     return 301 https://$host$request_uri;
 }
 
 server {
     listen 443 ssl;
-    server_name example.com;
+    server_name your_domain.com;
 #use the location of you own SSL certificate#
     ssl_certificate /etc/nginx/certificate/nginx-certificate.crt;
     ssl_certificate_key /etc/nginx/certificate/nginx.key;
